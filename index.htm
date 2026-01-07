@@ -14,6 +14,15 @@
   .heartText h1 { margin: 0; font-size: 1.8em; color: #b30000; }
   .heartText p { margin: 5px 0 0 0; color: #444; font-size: 0.95em; }
 </style>
+<link rel="manifest" href="manifest.json">
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+  
 </head>
 
 <body>
@@ -218,4 +227,5 @@ function calculate() {
 </script>
 
 </body>
+
 </html>
